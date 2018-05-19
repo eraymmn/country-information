@@ -1,0 +1,192 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Krona One', sans-serif;
+    height: 100%;
+    display: block;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0;
+    color: cornsilk;
+    text-shadow: 0 0 10px black;
+}
+.countryName {
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+ul li {
+    list-style: none;
+}
+header, footer {
+    padding: 30px;
+    padding-bottom: 0px;
+}
+header a {
+    text-decoration: none;
+}
+body {
+    background-image: url("http://www.teletech.com/sites/default/files/consulting-map-untagged.jpg");
+    /*background-image: url("https://img00.deviantart.net/10ac/i/2013/238/c/9/minimalistic_world_map_by_schub3rt-d6jtorn.jpg");*/
+    background-size: cover;
+}
+.container {
+    padding: 30px 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+.container h1, .container h2 {
+    margin: 20px 0px;
+}
+#search {
+    width: 500px;
+    margin: 0px auto;
+}
+
+#search input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    outline: 1px solid gray;
+}
+
+#result {
+    position: absolute;
+    z-index: 99999;
+    text-align: center;
+    background: white;
+    width: 500px;
+}
+#loading {
+    position: absolute;
+    z-index: 99999;
+    text-align: center;
+    background: white;
+    width: 500px;
+}
+.loadingImg {
+    width: 33%;
+}
+
+#list {
+    padding: 0px;
+    margin: 0px;
+}
+#list li {
+    list-style-type: none;
+    text-align: left;
+    padding: 5px 0px;
+    color: black;
+}
+
+#list li:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.item div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 14px;
+    font-size: 0.7em;
+}
+
+.searchImg {
+    width: 30px;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+    float: left;
+    margin-left: 30px;
+    height: 18px;
+    box-shadow: 0 0 10px 1px white;
+}
+
+#content {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    min-height: 60%;
+}
+
+.countryContainer, .countryFlagContainer {
+    /*width: 48%;*/
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+    height: 388px;
+    width: 400px;
+}
+.resultImg {
+    box-shadow: 0 0 13px 1px black;
+    width: 100%;
+    display: block;
+    position: inherit;
+    box-sizing: border-box;
+}
+
+.countryInfo {
+    width: 100%;
+    margin: 0px;
+    text-align: left;
+    list-style: none;
+    padding: 0px;
+}
+
+.countryInfo li{
+    margin: 15px 0;
+    margin-top: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.61);
+    color: black;
+    text-shadow: 0 0 11px thistle;
+    font-size: 0.9em;
+}
+.languages {
+    padding: 0px;
+    color: black;
+    text-shadow: 0 0 11px thistle;
+    font-size: 0.9em;
+}
+.languages li {
+    margin-top: 6px;
+}
+.infoText {
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 7px black;
+}
+
+footer {
+    text-align: center;
+    padding: 12px 0px;
+    margin: 0px auto;
+    position: absolute;
+    color: white;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+input {
+    font-size: 1.5em;
+}
+
+footer div a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+footer div a:hover {
+    opacity: 1;
+}
+.not-found {
+    padding: 10px;
+    list-style: none;
+}

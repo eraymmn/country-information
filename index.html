@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Country information</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!--<script src="assets/js/jquery-3.2.1.min.js"></script>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--<script src="assets/js/jquery.backgroundMove.js"></script>-->
+    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+    <script src="assets/js/jquery.particleground.min.js"></script>
+
+
+</head>
+<body class="move">
+    <header>
+        <a href="index.html"><h1>Country information</h1></a>
+    </header>
+
+    <div class="container" id="particles">
+        <h2>Please enter a country</h2>
+        <div id="search">
+            <input type="text" name="countryName" id="countryName" placeholder="country">
+            <div id="result"></div>
+            <div id="loading"></div>
+        </div>
+
+        <div id="content"></div>
+
+        <footer>
+            <div>Copyright © 2018 Design - <a href="https://www.facebook.com/eray.mumun.94" target="_blank">Eray</a></div>
+        </footer>
+    </div>
+    <script src="assets/js/functions.js"></script>
+    <script>
+//        $('.move').backgroundMove({
+//            movementStrength:'50'
+//        });
+$(document).ready(function() {
+    $('#particles').particleground({
+        minSpeedX: 0.4,
+        maxSpeedX: 0.1,
+        minSpeedY: 0.1,
+        maxSpeedY: 0.2,
+        directionX: 'center', // 'center', 'left' or 'right'. 'center' = dots bounce off edges
+        directionY: 'center', // 'center', 'up' or 'down'. 'center' = dots bounce off edges
+        density: 8000, // How many particles will be generated: one particle every n pixels
+        dotColor: 'white',
+        lineColor: 'gray',
+        particleRadius: 5, // Dot size
+        lineWidth: 0.5,
+        curvedLines: true,
+        proximity: 150, // How close two dots need to be before they join
+        parallax: true,
+        parallaxMultiplier: 5, // The lower the number, the more extreme the parallax effect
+        onInit: function() {},
+        onDestroy: function() {}
+    });
+});
+
+    </script>
+</body>
+</html>
